@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_2dam03DataSet" targetNamespace="http://tempuri.org/_2dam03DataSet.xsd" xmlns:mstns="http://tempuri.org/_2dam03DataSet.xsd" xmlns="http://tempuri.org/_2dam03DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="_2dam03ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="_2dam03ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.InformesEmpleado.Properties.Settings.GlobalReference.Default._2dam03ConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="departamentoTableAdapter" GeneratorDataComponentClassName="departamentoTableAdapter" Name="departamento" UserDataComponentName="departamentoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="_2dam03ConnectionString (Settings)" DbObjectName="`2dam03`.departamento" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id_dpto`, `nombre_dpto` FROM `departamento`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="empleadoTableAdapter" GeneratorDataComponentClassName="empleadoTableAdapter" Name="empleado" UserDataComponentName="empleadoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="_2dam03ConnectionString (Settings)" DbObjectName="`2dam03`.empleado" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id_empleado`, `dni`, `nombre`, `direccion`, `telefono`, `fecha_Nacimiento`, `id_dpto1` FROM `empleado`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="empleado_proyectoTableAdapter" GeneratorDataComponentClassName="empleado_proyectoTableAdapter" Name="empleado_proyecto" UserDataComponentName="empleado_proyectoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="_2dam03ConnectionString (Settings)" DbObjectName="`2dam03`.empleado_proyecto" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id_empleado1`, `id_proyecto1` FROM `empleado_proyecto`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="proyectoTableAdapter" GeneratorDataComponentClassName="proyectoTableAdapter" Name="proyecto" UserDataComponentName="proyectoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="_2dam03ConnectionString (Settings)" DbObjectName="`2dam03`.proyecto" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id_proyecto`, `nombre_proyecto`, `fecha_inicio`, `fecha_fin` FROM `proyecto`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="departamento1TableAdapter" GeneratorDataComponentClassName="departamento1TableAdapter" Name="departamento1" UserDataComponentName="departamento1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="_2dam03ConnectionString (Settings)" DbObjectName="`2dam03`.departamento" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `departamento` WHERE ((`id_dpto` = @p1) AND (`nombre_dpto` = @p2))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="id_dpto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="nombre_dpto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `departamento` (`nombre_dpto`) VALUES (@p1)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="nombre_dpto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id_dpto`, `nombre_dpto` FROM `departamento`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `departamento` SET `nombre_dpto` = @p1 WHERE ((`id_dpto` = @p2) AND (`nombre_dpto` = @p3))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="nombre_dpto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="id_dpto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="nombre_dpto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_dpto" DataSetColumn="id_dpto" />
+              <Mapping SourceColumn="nombre_dpto" DataSetColumn="nombre_dpto" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="empleado1TableAdapter" GeneratorDataComponentClassName="empleado1TableAdapter" Name="empleado1" UserDataComponentName="empleado1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="_2dam03ConnectionString (Settings)" DbObjectName="`2dam03`.empleado" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `empleado` WHERE ((`id_empleado` = @p1) AND (`dni` = @p2) AND (`nombre` = @p3) AND (`direccion` = @p4) AND (`telefono` = @p5) AND (`fecha_Nacimiento` = @p6) AND (`id_dpto1` = @p7))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="id_empleado" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="dni" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="direccion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="telefono" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p6" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha_Nacimiento" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p7" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="id_dpto1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `empleado` (`dni`, `nombre`, `direccion`, `telefono`, `fecha_Nacimiento`, `id_dpto1`) VALUES (@p1, @p2, @p3, @p4, @p5, @p6)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="dni" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="direccion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="telefono" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p5" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha_Nacimiento" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p6" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="id_dpto1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id_empleado`, `dni`, `nombre`, `direccion`, `telefono`, `fecha_Nacimiento`, `id_dpto1` FROM `empleado`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `empleado` SET `dni` = @p1, `nombre` = @p2, `direccion` = @p3, `telefono` = @p4, `fecha_Nacimiento` = @p5, `id_dpto1` = @p6 WHERE ((`id_empleado` = @p7) AND (`dni` = @p8) AND (`nombre` = @p9) AND (`direccion` = @p10) AND (`telefono` = @p11) AND (`fecha_Nacimiento` = @p12) AND (`id_dpto1` = @p13))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="dni" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="direccion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="telefono" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p5" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha_Nacimiento" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p6" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="id_dpto1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p7" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="id_empleado" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="dni" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="direccion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="telefono" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p12" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha_Nacimiento" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p13" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="id_dpto1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_empleado" DataSetColumn="id_empleado" />
+              <Mapping SourceColumn="dni" DataSetColumn="dni" />
+              <Mapping SourceColumn="nombre" DataSetColumn="nombre" />
+              <Mapping SourceColumn="direccion" DataSetColumn="direccion" />
+              <Mapping SourceColumn="telefono" DataSetColumn="telefono" />
+              <Mapping SourceColumn="fecha_Nacimiento" DataSetColumn="fecha_Nacimiento" />
+              <Mapping SourceColumn="id_dpto1" DataSetColumn="id_dpto1" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="empleado_proyecto1TableAdapter" GeneratorDataComponentClassName="empleado_proyecto1TableAdapter" Name="empleado_proyecto1" UserDataComponentName="empleado_proyecto1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="_2dam03ConnectionString (Settings)" DbObjectName="`2dam03`.empleado_proyecto" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `empleado_proyecto` (`id_empleado1`, `id_proyecto1`) VALUES (@p1, @p2)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="id_empleado1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="id_proyecto1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id_empleado1`, `id_proyecto1` FROM `empleado_proyecto`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_empleado1" DataSetColumn="id_empleado1" />
+              <Mapping SourceColumn="id_proyecto1" DataSetColumn="id_proyecto1" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="proyecto1TableAdapter" GeneratorDataComponentClassName="proyecto1TableAdapter" Name="proyecto1" UserDataComponentName="proyecto1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="_2dam03ConnectionString (Settings)" DbObjectName="`2dam03`.proyecto" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `proyecto` WHERE ((`id_proyecto` = @p1) AND (`nombre_proyecto` = @p2) AND (`fecha_inicio` = @p3) AND (`fecha_fin` = @p4))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="id_proyecto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="nombre_proyecto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha_inicio" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p4" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha_fin" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `proyecto` (`nombre_proyecto`, `fecha_inicio`, `fecha_fin`) VALUES (@p1, @p2, @p3)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="nombre_proyecto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha_inicio" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha_fin" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id_proyecto`, `nombre_proyecto`, `fecha_inicio`, `fecha_fin` FROM `proyecto`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `proyecto` SET `nombre_proyecto` = @p1, `fecha_inicio` = @p2, `fecha_fin` = @p3 WHERE ((`id_proyecto` = @p4) AND (`nombre_proyecto` = @p5) AND (`fecha_inicio` = @p6) AND (`fecha_fin` = @p7))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="nombre_proyecto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha_inicio" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha_fin" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p4" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="id_proyecto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="nombre_proyecto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p6" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha_inicio" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p7" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fecha_fin" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_proyecto" DataSetColumn="id_proyecto" />
+              <Mapping SourceColumn="nombre_proyecto" DataSetColumn="nombre_proyecto" />
+              <Mapping SourceColumn="fecha_inicio" DataSetColumn="fecha_inicio" />
+              <Mapping SourceColumn="fecha_fin" DataSetColumn="fecha_fin" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="InformeTableAdapter" GeneratorDataComponentClassName="InformeTableAdapter" Name="Informe" UserDataComponentName="InformeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="_2dam03ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT departamento.id_dpto, departamento.nombre_dpto, empleado.id_empleado AS Expr1, empleado.dni, empleado.nombre, empleado.direccion, empleado.telefono, empleado.fecha_Nacimiento, proyecto.id_proyecto, 
+                  proyecto.nombre_proyecto, proyecto.fecha_inicio, proyecto.fecha_fin
+FROM     departamento INNER JOIN
+                  empleado ON departamento.id_dpto = empleado.id_dpto1 INNER JOIN
+                  empleado_proyecto ON empleado.id_empleado = empleado_proyecto.id_empleado1 INNER JOIN
+                  proyecto ON empleado_proyecto.id_proyecto1 = proyecto.id_proyecto</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_dpto" DataSetColumn="id_dpto" />
+              <Mapping SourceColumn="nombre_dpto" DataSetColumn="nombre_dpto" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="dni" DataSetColumn="dni" />
+              <Mapping SourceColumn="nombre" DataSetColumn="nombre" />
+              <Mapping SourceColumn="direccion" DataSetColumn="direccion" />
+              <Mapping SourceColumn="telefono" DataSetColumn="telefono" />
+              <Mapping SourceColumn="fecha_Nacimiento" DataSetColumn="fecha_Nacimiento" />
+              <Mapping SourceColumn="id_proyecto" DataSetColumn="id_proyecto" />
+              <Mapping SourceColumn="nombre_proyecto" DataSetColumn="nombre_proyecto" />
+              <Mapping SourceColumn="fecha_inicio" DataSetColumn="fecha_inicio" />
+              <Mapping SourceColumn="fecha_fin" DataSetColumn="fecha_fin" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="_2dam03ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByIdDpto" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataByIdDpto" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByIdDpto" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT departamento.id_dpto, departamento.nombre_dpto, empleado.id_empleado AS Expr1, empleado.dni, empleado.nombre, empleado.direccion, empleado.telefono, empleado.fecha_Nacimiento, proyecto.id_proyecto, 
+                  proyecto.nombre_proyecto, proyecto.fecha_inicio, proyecto.fecha_fin
+FROM     departamento INNER JOIN
+                  empleado ON departamento.id_dpto = empleado.id_dpto1 INNER JOIN
+                  empleado_proyecto ON empleado.id_empleado = empleado_proyecto.id_empleado1 INNER JOIN
+                  proyecto ON empleado_proyecto.id_proyecto1 = proyecto.id_proyecto
+WHERE departamento.id_dpto = @id_dpto</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="id_dpto" ColumnName="id_dpto" DataSourceName="`2dam03`.departamento" DataTypeServer="int(11)" DbType="Int32" Direction="Input" ParameterName="@id_dpto" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="id_dpto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_2dam03DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_2dam03DataSet" msprop:Generator_UserDSName="_2dam03DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="departamento" msprop:Generator_TableClassName="departamentoDataTable" msprop:Generator_TableVarName="tabledepartamento" msprop:Generator_TablePropName="departamento" msprop:Generator_RowDeletingName="departamentoRowDeleting" msprop:Generator_RowChangingName="departamentoRowChanging" msprop:Generator_RowEvHandlerName="departamentoRowChangeEventHandler" msprop:Generator_RowDeletedName="departamentoRowDeleted" msprop:Generator_UserTableName="departamento" msprop:Generator_RowChangedName="departamentoRowChanged" msprop:Generator_RowEvArgName="departamentoRowChangeEvent" msprop:Generator_RowClassName="departamentoRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="empleado" msprop:Generator_TableClassName="empleadoDataTable" msprop:Generator_TableVarName="tableempleado" msprop:Generator_TablePropName="empleado" msprop:Generator_RowDeletingName="empleadoRowDeleting" msprop:Generator_RowChangingName="empleadoRowChanging" msprop:Generator_RowEvHandlerName="empleadoRowChangeEventHandler" msprop:Generator_RowDeletedName="empleadoRowDeleted" msprop:Generator_UserTableName="empleado" msprop:Generator_RowChangedName="empleadoRowChanged" msprop:Generator_RowEvArgName="empleadoRowChangeEvent" msprop:Generator_RowClassName="empleadoRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="empleado_proyecto" msprop:Generator_TableClassName="empleado_proyectoDataTable" msprop:Generator_TableVarName="tableempleado_proyecto" msprop:Generator_TablePropName="empleado_proyecto" msprop:Generator_RowDeletingName="empleado_proyectoRowDeleting" msprop:Generator_RowChangingName="empleado_proyectoRowChanging" msprop:Generator_RowEvHandlerName="empleado_proyectoRowChangeEventHandler" msprop:Generator_RowDeletedName="empleado_proyectoRowDeleted" msprop:Generator_UserTableName="empleado_proyecto" msprop:Generator_RowChangedName="empleado_proyectoRowChanged" msprop:Generator_RowEvArgName="empleado_proyectoRowChangeEvent" msprop:Generator_RowClassName="empleado_proyectoRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="proyecto" msprop:Generator_TableClassName="proyectoDataTable" msprop:Generator_TableVarName="tableproyecto" msprop:Generator_TablePropName="proyecto" msprop:Generator_RowDeletingName="proyectoRowDeleting" msprop:Generator_RowChangingName="proyectoRowChanging" msprop:Generator_RowEvHandlerName="proyectoRowChangeEventHandler" msprop:Generator_RowDeletedName="proyectoRowDeleted" msprop:Generator_UserTableName="proyecto" msprop:Generator_RowChangedName="proyectoRowChanged" msprop:Generator_RowEvArgName="proyectoRowChangeEvent" msprop:Generator_RowClassName="proyectoRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="departamento1" msprop:Generator_TableClassName="departamento1DataTable" msprop:Generator_TableVarName="tabledepartamento1" msprop:Generator_RowChangedName="departamento1RowChanged" msprop:Generator_TablePropName="departamento1" msprop:Generator_RowDeletingName="departamento1RowDeleting" msprop:Generator_RowChangingName="departamento1RowChanging" msprop:Generator_RowEvHandlerName="departamento1RowChangeEventHandler" msprop:Generator_RowDeletedName="departamento1RowDeleted" msprop:Generator_RowClassName="departamento1Row" msprop:Generator_UserTableName="departamento1" msprop:Generator_RowEvArgName="departamento1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_dpto" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_dpto" msprop:Generator_ColumnPropNameInRow="id_dpto" msprop:Generator_ColumnPropNameInTable="id_dptoColumn" msprop:Generator_UserColumnName="id_dpto" type="xs:int" />
+              <xs:element name="nombre_dpto" msprop:Generator_ColumnVarNameInTable="columnnombre_dpto" msprop:Generator_ColumnPropNameInRow="nombre_dpto" msprop:Generator_ColumnPropNameInTable="nombre_dptoColumn" msprop:Generator_UserColumnName="nombre_dpto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="empleado1" msprop:Generator_TableClassName="empleado1DataTable" msprop:Generator_TableVarName="tableempleado1" msprop:Generator_RowChangedName="empleado1RowChanged" msprop:Generator_TablePropName="empleado1" msprop:Generator_RowDeletingName="empleado1RowDeleting" msprop:Generator_RowChangingName="empleado1RowChanging" msprop:Generator_RowEvHandlerName="empleado1RowChangeEventHandler" msprop:Generator_RowDeletedName="empleado1RowDeleted" msprop:Generator_RowClassName="empleado1Row" msprop:Generator_UserTableName="empleado1" msprop:Generator_RowEvArgName="empleado1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_empleado" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_empleado" msprop:Generator_ColumnPropNameInRow="id_empleado" msprop:Generator_ColumnPropNameInTable="id_empleadoColumn" msprop:Generator_UserColumnName="id_empleado" type="xs:int" />
+              <xs:element name="dni" msprop:Generator_ColumnVarNameInTable="columndni" msprop:Generator_ColumnPropNameInRow="dni" msprop:Generator_ColumnPropNameInTable="dniColumn" msprop:Generator_UserColumnName="dni">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="direccion" msprop:Generator_ColumnVarNameInTable="columndireccion" msprop:Generator_ColumnPropNameInRow="direccion" msprop:Generator_ColumnPropNameInTable="direccionColumn" msprop:Generator_UserColumnName="direccion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="telefono" msprop:Generator_ColumnVarNameInTable="columntelefono" msprop:Generator_ColumnPropNameInRow="telefono" msprop:Generator_ColumnPropNameInTable="telefonoColumn" msprop:Generator_UserColumnName="telefono">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fecha_Nacimiento" msprop:Generator_ColumnVarNameInTable="columnfecha_Nacimiento" msprop:Generator_ColumnPropNameInRow="fecha_Nacimiento" msprop:Generator_ColumnPropNameInTable="fecha_NacimientoColumn" msprop:Generator_UserColumnName="fecha_Nacimiento" type="xs:dateTime" />
+              <xs:element name="id_dpto1" msprop:Generator_ColumnVarNameInTable="columnid_dpto1" msprop:Generator_ColumnPropNameInRow="id_dpto1" msprop:Generator_ColumnPropNameInTable="id_dpto1Column" msprop:Generator_UserColumnName="id_dpto1" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="empleado_proyecto1" msprop:Generator_TableClassName="empleado_proyecto1DataTable" msprop:Generator_TableVarName="tableempleado_proyecto1" msprop:Generator_RowChangedName="empleado_proyecto1RowChanged" msprop:Generator_TablePropName="empleado_proyecto1" msprop:Generator_RowDeletingName="empleado_proyecto1RowDeleting" msprop:Generator_RowChangingName="empleado_proyecto1RowChanging" msprop:Generator_RowEvHandlerName="empleado_proyecto1RowChangeEventHandler" msprop:Generator_RowDeletedName="empleado_proyecto1RowDeleted" msprop:Generator_RowClassName="empleado_proyecto1Row" msprop:Generator_UserTableName="empleado_proyecto1" msprop:Generator_RowEvArgName="empleado_proyecto1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_empleado1" msprop:Generator_ColumnVarNameInTable="columnid_empleado1" msprop:Generator_ColumnPropNameInRow="id_empleado1" msprop:Generator_ColumnPropNameInTable="id_empleado1Column" msprop:Generator_UserColumnName="id_empleado1" type="xs:int" />
+              <xs:element name="id_proyecto1" msprop:Generator_ColumnVarNameInTable="columnid_proyecto1" msprop:Generator_ColumnPropNameInRow="id_proyecto1" msprop:Generator_ColumnPropNameInTable="id_proyecto1Column" msprop:Generator_UserColumnName="id_proyecto1" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="proyecto1" msprop:Generator_TableClassName="proyecto1DataTable" msprop:Generator_TableVarName="tableproyecto1" msprop:Generator_RowChangedName="proyecto1RowChanged" msprop:Generator_TablePropName="proyecto1" msprop:Generator_RowDeletingName="proyecto1RowDeleting" msprop:Generator_RowChangingName="proyecto1RowChanging" msprop:Generator_RowEvHandlerName="proyecto1RowChangeEventHandler" msprop:Generator_RowDeletedName="proyecto1RowDeleted" msprop:Generator_RowClassName="proyecto1Row" msprop:Generator_UserTableName="proyecto1" msprop:Generator_RowEvArgName="proyecto1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_proyecto" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_proyecto" msprop:Generator_ColumnPropNameInRow="id_proyecto" msprop:Generator_ColumnPropNameInTable="id_proyectoColumn" msprop:Generator_UserColumnName="id_proyecto" type="xs:int" />
+              <xs:element name="nombre_proyecto" msprop:Generator_ColumnVarNameInTable="columnnombre_proyecto" msprop:Generator_ColumnPropNameInRow="nombre_proyecto" msprop:Generator_ColumnPropNameInTable="nombre_proyectoColumn" msprop:Generator_UserColumnName="nombre_proyecto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fecha_inicio" msprop:Generator_ColumnVarNameInTable="columnfecha_inicio" msprop:Generator_ColumnPropNameInRow="fecha_inicio" msprop:Generator_ColumnPropNameInTable="fecha_inicioColumn" msprop:Generator_UserColumnName="fecha_inicio" type="xs:dateTime" />
+              <xs:element name="fecha_fin" msprop:Generator_ColumnVarNameInTable="columnfecha_fin" msprop:Generator_ColumnPropNameInRow="fecha_fin" msprop:Generator_ColumnPropNameInTable="fecha_finColumn" msprop:Generator_UserColumnName="fecha_fin" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Informe" msprop:Generator_TableClassName="InformeDataTable" msprop:Generator_TableVarName="tableInforme" msprop:Generator_TablePropName="Informe" msprop:Generator_RowDeletingName="InformeRowDeleting" msprop:Generator_RowChangingName="InformeRowChanging" msprop:Generator_RowEvHandlerName="InformeRowChangeEventHandler" msprop:Generator_RowDeletedName="InformeRowDeleted" msprop:Generator_UserTableName="Informe" msprop:Generator_RowChangedName="InformeRowChanged" msprop:Generator_RowEvArgName="InformeRowChangeEvent" msprop:Generator_RowClassName="InformeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_dpto" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_dpto" msprop:Generator_ColumnPropNameInRow="id_dpto" msprop:Generator_ColumnPropNameInTable="id_dptoColumn" msprop:Generator_UserColumnName="id_dpto" type="xs:int" />
+              <xs:element name="nombre_dpto" msprop:Generator_ColumnVarNameInTable="columnnombre_dpto" msprop:Generator_ColumnPropNameInRow="nombre_dpto" msprop:Generator_ColumnPropNameInTable="nombre_dptoColumn" msprop:Generator_UserColumnName="nombre_dpto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr1" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" type="xs:int" />
+              <xs:element name="dni" msprop:Generator_ColumnVarNameInTable="columndni" msprop:Generator_ColumnPropNameInRow="dni" msprop:Generator_ColumnPropNameInTable="dniColumn" msprop:Generator_UserColumnName="dni">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="direccion" msprop:Generator_ColumnVarNameInTable="columndireccion" msprop:Generator_ColumnPropNameInRow="direccion" msprop:Generator_ColumnPropNameInTable="direccionColumn" msprop:Generator_UserColumnName="direccion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="telefono" msprop:Generator_ColumnVarNameInTable="columntelefono" msprop:Generator_ColumnPropNameInRow="telefono" msprop:Generator_ColumnPropNameInTable="telefonoColumn" msprop:Generator_UserColumnName="telefono">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fecha_Nacimiento" msprop:Generator_ColumnVarNameInTable="columnfecha_Nacimiento" msprop:Generator_ColumnPropNameInRow="fecha_Nacimiento" msprop:Generator_ColumnPropNameInTable="fecha_NacimientoColumn" msprop:Generator_UserColumnName="fecha_Nacimiento" type="xs:dateTime" />
+              <xs:element name="id_proyecto" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_proyecto" msprop:Generator_ColumnPropNameInRow="id_proyecto" msprop:Generator_ColumnPropNameInTable="id_proyectoColumn" msprop:Generator_UserColumnName="id_proyecto" type="xs:int" />
+              <xs:element name="nombre_proyecto" msprop:Generator_ColumnVarNameInTable="columnnombre_proyecto" msprop:Generator_ColumnPropNameInRow="nombre_proyecto" msprop:Generator_ColumnPropNameInTable="nombre_proyectoColumn" msprop:Generator_UserColumnName="nombre_proyecto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fecha_inicio" msprop:Generator_ColumnVarNameInTable="columnfecha_inicio" msprop:Generator_ColumnPropNameInRow="fecha_inicio" msprop:Generator_ColumnPropNameInTable="fecha_inicioColumn" msprop:Generator_UserColumnName="fecha_inicio" type="xs:dateTime" />
+              <xs:element name="fecha_fin" msprop:Generator_ColumnVarNameInTable="columnfecha_fin" msprop:Generator_ColumnPropNameInRow="fecha_fin" msprop:Generator_ColumnPropNameInTable="fecha_finColumn" msprop:Generator_UserColumnName="fecha_fin" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:departamento1" />
+      <xs:field xpath="mstns:id_dpto" />
+    </xs:unique>
+    <xs:unique name="empleado1_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:empleado1" />
+      <xs:field xpath="mstns:id_empleado" />
+    </xs:unique>
+    <xs:unique name="proyecto1_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:proyecto1" />
+      <xs:field xpath="mstns:id_proyecto" />
+    </xs:unique>
+    <xs:unique name="Informe_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Informe" />
+      <xs:field xpath="mstns:id_dpto" />
+      <xs:field xpath="mstns:Expr1" />
+      <xs:field xpath="mstns:id_proyecto" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="empleado_ibfk_2" msdata:parent="departamento1" msdata:child="empleado1" msdata:parentkey="id_dpto" msdata:childkey="id_dpto1" msprop:Generator_UserChildTable="empleado1" msprop:Generator_ChildPropName="Getempleado1Rows" msprop:Generator_UserRelationName="empleado_ibfk_2" msprop:Generator_RelationVarName="relationempleado_ibfk_2" msprop:Generator_UserParentTable="departamento1" msprop:Generator_ParentPropName="departamento1Row" />
+      <msdata:Relationship name="empleado_proyecto_ibfk_4" msdata:parent="empleado1" msdata:child="empleado_proyecto1" msdata:parentkey="id_empleado" msdata:childkey="id_empleado1" msprop:Generator_UserChildTable="empleado_proyecto1" msprop:Generator_ChildPropName="Getempleado_proyecto1Rows" msprop:Generator_UserRelationName="empleado_proyecto_ibfk_4" msprop:Generator_RelationVarName="relationempleado_proyecto_ibfk_4" msprop:Generator_UserParentTable="empleado1" msprop:Generator_ParentPropName="empleado1Row" />
+      <msdata:Relationship name="empleado_proyecto_ibfk_5" msdata:parent="proyecto1" msdata:child="empleado_proyecto1" msdata:parentkey="id_proyecto" msdata:childkey="id_proyecto1" msprop:Generator_UserChildTable="empleado_proyecto1" msprop:Generator_ChildPropName="Getempleado_proyecto1Rows" msprop:Generator_UserRelationName="empleado_proyecto_ibfk_5" msprop:Generator_ParentPropName="proyecto1Row" msprop:Generator_RelationVarName="relationempleado_proyecto_ibfk_5" msprop:Generator_UserParentTable="proyecto1" />
+      <msdata:Relationship name="empleado_ibfk_21" msdata:parent="Informe" msdata:child="empleado1" msdata:parentkey="id_dpto" msdata:childkey="id_dpto1" msprop:Generator_UserChildTable="empleado1" msprop:Generator_ChildPropName="Getempleado1Rows" msprop:Generator_UserRelationName="empleado_ibfk_21" msprop:Generator_RelationVarName="relationempleado_ibfk_21" msprop:Generator_UserParentTable="Informe" msprop:Generator_ParentPropName="InformeRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
